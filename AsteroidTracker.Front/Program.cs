@@ -31,8 +31,8 @@ app.UseEndpoints(endpoints =>
     pattern: "{controller=Login}/{action=Index}/{id?}");
 
     endpoints.MapControllerRoute(
-    name: "areas",
-    pattern: "{area}/{AsteroidList}/{action=Index}/{id?}");
+    name: "AsteroidList",
+    pattern: "{controller=AsteroidList}/{action=Index}/{id?}");
 });
 
 

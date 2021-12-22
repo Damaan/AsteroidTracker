@@ -20,16 +20,14 @@ async function Login() {
         method: 'POST',
         body: data
     })
-    /*.then(response => response.json())
-    .then(data => console.log(data));*/
     .then(response => response.json())
     .then(function (x) {
         if (x.success === true) {
             window.location.href = `https://localhost:7283/AsteroidList?token=${ x.token }`;
+        } else {
+            document.getElementById("login-error")style.display = "block";
         }
         console.log(x);
     })
-    .catch(function (err) {
-        console.log(err);
-    })
+
 }
