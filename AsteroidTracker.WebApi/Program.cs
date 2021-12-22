@@ -1,6 +1,7 @@
 using AsteroidTracker.WebApi.Service;
 using AsteroidTracker.WebApi.Utils;
 
+string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,10 +15,19 @@ builder.Services.Configure<Configuration>(builder.Configuration.GetSection("Conf
 builder.Services.AddScoped<LoginService>();
 builder.Services.AddScoped<NasaApiService>();
 
+builder.Services.AddCors(o => o.AddPolicy(MyAllowSpecificOrigins,
+                      builder =>
+                      {
+                          builder.WithOrigins("https://localhost:7283")
+                      .AllowAnyMethod()
+                       .AllowAnyHeader();
+                      }));
+
+
 var app = builder.Build();
 
 app.UseMiddleware<LoginMiddleware>();
-
+app.UseCors(MyAllowSpecificOrigins);
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

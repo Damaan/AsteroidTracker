@@ -5,9 +5,13 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{BBB0191D-627D-4F27-8B2A-E02762892352}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsteroidTracker.ViewModel", ".\AsteroidTracker.ViewModel\AsteroidTracker.ViewModel.csproj", "{DA9A3488-FAF3-40EB-A656-EF538F61CB2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsteroidTracker.ViewModel", "AsteroidTracker.ViewModel\AsteroidTracker.ViewModel.csproj", "{DA9A3488-FAF3-40EB-A656-EF538F61CB2F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsteroidTracker.WebApi", ".\AsteroidTracker.WebApi\AsteroidTracker.WebApi.csproj", "{DD456B45-02BA-47FC-ACB6-EC3C70AF677B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsteroidTracker.WebApi", "AsteroidTracker.WebApi\AsteroidTracker.WebApi.csproj", "{DD456B45-02BA-47FC-ACB6-EC3C70AF677B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{87DD08EF-3E50-4143-BA15-2496E3C262E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsteroidTracker.Front", "AsteroidTracker.Front\AsteroidTracker.Front.csproj", "{6E6D0028-EDD5-4D37-AFAF-BDB6DA295B79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,10 @@ Global
 		{DD456B45-02BA-47FC-ACB6-EC3C70AF677B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD456B45-02BA-47FC-ACB6-EC3C70AF677B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD456B45-02BA-47FC-ACB6-EC3C70AF677B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E6D0028-EDD5-4D37-AFAF-BDB6DA295B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6D0028-EDD5-4D37-AFAF-BDB6DA295B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6D0028-EDD5-4D37-AFAF-BDB6DA295B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6D0028-EDD5-4D37-AFAF-BDB6DA295B79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DA9A3488-FAF3-40EB-A656-EF538F61CB2F} = {BBB0191D-627D-4F27-8B2A-E02762892352}
 		{DD456B45-02BA-47FC-ACB6-EC3C70AF677B} = {BBB0191D-627D-4F27-8B2A-E02762892352}
+		{6E6D0028-EDD5-4D37-AFAF-BDB6DA295B79} = {87DD08EF-3E50-4143-BA15-2496E3C262E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {474BD1BC-CDDD-441C-A45C-5568A1936F7A}
